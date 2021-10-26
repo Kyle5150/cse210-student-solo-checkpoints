@@ -16,8 +16,8 @@ class Food(Actor):
 
     def reset(self):
         self._points = random.randint(1, 5)
-        x = random.randint(1, constants.MAX_X)
-        y = random.randint(1, constants.MAX_Y)
+        x = random.randint(1, constants.MAX_X - 1)
+        y = random.randint(1, constants.MAX_Y - 1)
         position = Point(x, y)
         self.set_position(position)
 
